@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Local
+    'chat',
+
     # Third-party
     'django_extensions',
 ]
