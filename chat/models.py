@@ -27,13 +27,5 @@ class ChatGroupMember(models.Model):
         related_name='group_memberships'
     )
 
-    class Meta:
-        constraints = [
-            models.UniqueConstraint(
-                fields=['chat_group', 'user'],
-                name='unique_chat_group_user'
-            )
-        ]
-
     def __str__(self):
         return f'Chat membership {self.user} -> {self.chat_group}'
